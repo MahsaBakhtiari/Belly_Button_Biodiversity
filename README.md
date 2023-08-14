@@ -15,6 +15,14 @@ The study's dataset is stored as a  JSON object in [URL](https://2u-data-curricu
 ### Data visualization and interactive plotting
 For interactive visualization, preloaded plots and metadata display were created with Plotly, and a on-change event handler was added to update the plots and the metadata display interactively.
 
+### Contributing
+
+Contributions to this project are welcome. If you find any issues or have suggestions for improvement, please submit a pull  request or open an issue on the GitHub repository.
+
+### Resources
+
+- http://robdunnlab.com/projects/belly-button-biodiversity/
+- https://plotly.com/chart-studio-help/json-chart-schema/
 
 
 
