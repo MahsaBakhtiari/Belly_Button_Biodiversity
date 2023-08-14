@@ -56,8 +56,9 @@ d3.json(url).then(function(data){ // Read the data
         let layout= {
             width: 600,
             height: 600,
+            title: "Top 10 OTUs found in the Sample"
         };
-        Plotly.newPlot("bar",Data);
+        Plotly.newPlot("bar",Data, layout);
     };
     // Create a function to plot the standby bubble plot
     function bubblePlot(){ 
@@ -74,6 +75,7 @@ d3.json(url).then(function(data){ // Read the data
         }];
         let layout2 = {
             legend : "false",
+            title : "OTUs and their sample size",
             xaxis: {
                 title: {
                   text: 'OTU ID'
@@ -100,6 +102,11 @@ d3.json(url).then(function(data){ // Read the data
             orientation: 'h',
             type:"bar"
         }];
+        let layout2= {
+            width: 600,
+            height: 600,
+            title: "Top 10 OTUs found in the Sample"
+        };
         Plotly.restyle("bar", "x", [x]); // Restyle plot's x
         Plotly.restyle("bar", "y", [y]); // Restyle plot's y
         Plotly.restyle("bar", "text", [text]); // Restyle plot's text  
@@ -123,6 +130,7 @@ d3.json(url).then(function(data){ // Read the data
         }];
         let layout = {
             legend : "false",
+            title : "OTUs and their sample size",
             xaxis: {
                 title: {
                 text: 'OTU ID'
